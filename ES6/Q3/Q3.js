@@ -26,7 +26,7 @@ class Clock {
 
 }
 
-const clockArr = [];
+let clockArr = [];
 
 form.addEventListener("submit", function (event) {
     event.preventDefault();
@@ -55,8 +55,8 @@ form.addEventListener("submit", function (event) {
             infoDiv.insertAdjacentHTML("beforeend", mark);
         });
         clockArr = [];
-        infoDiv.innerHTML = "";
     }
+    console.log(clockArr.length);
 
     //clear the form values
     Array.from(form.elements).forEach(element => {
