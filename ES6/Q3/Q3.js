@@ -45,15 +45,17 @@ form.addEventListener("submit", function (event) {
         infoDiv.innerHTML = "";
         clockArr.forEach((clock) => {
             const mark = `
-    <p>
-        country: ${clock.country}<br>
-        time: ${clock.show()}<br>
-        in seconds: ${clock.convertToSeconds()}<br>
-    </p>
-    `;
+                    <p>
+                        country: ${clock.country}<br>
+                        time: ${clock.show()}<br>
+                        in seconds: ${clock.convertToSeconds()}<br>
+                    </p>
+                    `;
 
             infoDiv.insertAdjacentHTML("beforeend", mark);
         });
+        clockArr = [];
+        infoDiv.innerHTML = "";
     }
 
     //clear the form values

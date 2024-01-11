@@ -12,13 +12,13 @@
     <div id=" container">
         <form class="form">
             <label>hours</label>
-            <input type="number" name="hours" id="hours" value="1" /><br />
+            <input type="number" name="hours" id="hours" min="0" max="23" required /><br />
             <label>minutes</label>
-            <input type="number" name="minutes" id="minutes" value="1" /><br />
+            <input type="number" name="minutes" id="minutes" min="0" max="23" required /><br />
             <label>seconds</label>
-            <input type="number" name="seconds" id="seconds" value="1" /><br />
+            <input type="number" name="seconds" id="seconds" min="0" max="23" required /><br />
             <label>country</label>
-            <input type="text" name="country" id="country" value="israel" /><br />
+            <input type="text" name="country" id="country" required /><br />
             <input type="submit" id="submitBtn" value="Submit" /><br />
         </form>
 
