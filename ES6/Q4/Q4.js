@@ -51,18 +51,28 @@ console.log("Show function: ", p.show());
 p1 = new Point(2, 3);
 p2 = new Point(3, 3);
 p3 = new Point(3, 4);
+p4 = new Point(7, 8);
 
 const pArr = [];
 pArr.push(p);
 pArr.push(p1);
 pArr.push(p2);
+pArr.push(p3);
 
-console.log(pArr);
-const result = p1._2param(pArr, p3);
-console.log(result);
+// console.log(pArr);
+//q2) return true
+console.log("function number 2: ", p._3param(pArr, 3, 4))
+//q2) return false
+console.log("function number 2: ", p._3param(pArr, 5, 4))
+
+//q3) return true
+console.log("function number 3: ", p._2param(pArr, p3))
+//q3) return false
+console.log("function number 3: ", p._2param(pArr, p4));
 
 
-//for graphic points:
+
+//for visually points:
 // Example points
 const pointsArray = [
     new Point(1, 6),
