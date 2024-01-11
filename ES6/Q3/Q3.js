@@ -56,7 +56,6 @@ form.addEventListener("submit", function (event) {
         });
         clockArr = [];
     }
-    console.log(clockArr.length);
 
     //clear the form values
     Array.from(form.elements).forEach(element => {
